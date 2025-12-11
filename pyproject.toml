@@ -1,0 +1,15 @@
+[project]
+name = "search-for-phone"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.12"
+dependencies = [
+    "celery>=5.6.0",
+    "django>=6.0",
+    "djangorestframework>=3.16.1",
+    "granian>=2.6.0",
+    "psycopg2-binary>=2.9.11",
+    "pydantic>=2.12.5",
+    "redis>=7.1.0",
+    "requests>=2.32.5",
+]

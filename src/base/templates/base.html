@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+            {% block title %}<title>{{request.title}}</title>{% endblock %}
+    </head>
+    <body>
+    <div>
+        {% block content %}
+        {% endblock %}
+    </div>
+    </body>
+</html>
