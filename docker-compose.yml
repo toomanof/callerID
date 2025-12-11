@@ -46,7 +46,7 @@ services:
         - action: rebuild
           path: ./pyproject.toml
     command: >
-      sh -c "python manage.py migrate"
+      sh -c "python manage.py migrate && granian --interface wsgi src.wsgi:application --host 0.0.0.0 --port 8000"
 
   celery-beat:
     <<: *backend

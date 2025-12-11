@@ -21,9 +21,7 @@ RUN --mount=type=cache,target=/root/.cache/uv \
 # Place executables in the environment at the front of the path
 ENV PATH="/app/.venv/bin:$PATH"
 
-
 COPY ./entrypoint.sh /usr/local/bin
 RUN chmod +x /usr/local/bin/entrypoint.sh
 
-# Run the Django application by default
 CMD ["granian", "--interface", "wsgi", "src.wsgi:application", "--host", "0.0.0.0", "--port", "8000"]
